@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section id="_1">
+        <h4>Contáctanos</h4>
+        <p>
+          ¿Tienes una pregunta, un proyecto o solo quieres saludar? Escríbenos y
+          te contestaremos pronto.
+        </p>
+
+        <p>Horario</p>
+        <p>Lu — Vi, 9:00 — 18:00</p>
+
+        <p>Teléfono</p>
+        <p>+34 600 123 456</p>
+
+        <p>Email</p>
+        <p>hola@ejemplo.com</p>
+
+        <p>
+          Dirección: Calle Falsa 123, Madrid · Política de privacidad ·
+          Respuesta en 1-2 días hábiles
+        </p>
+      </section>
+      <section id="_2">
+        <h4>Envíanos un mensaje</h4>
+        <form action="/procesar-formulario" method="post">
+          <div class="nombre">
+            <label for="nombre"> Nombre</label>
+            <input type="text" id="nombre" value="Tu nombre" />
+          </div>
+          <div class="correo">
+            <label for="correo"> Correo electrónico</label>
+            <input type="text" id="correo" value="tu@ejemplo.com" />
+          </div>
+          <div class="telefono">
+            <label for="telefono"> Teléfono (opcional)</label>
+            <input type="text" id="telefono" value="+34 600 123 456" />
+          </div>
+          <div class="asunto">
+            <label for="asunto"> Asunto</label>
+            <input type="text" id="asunto" value="Breve resumen" />
+          </div>
+          <div class="mensaje">
+            <label for="mensaje"> Mensaje</label>
+
+            <textarea name="mensase" id="mensaje">
+Cuéntanos lo que necesites</textarea
+            >
+          </div>
+          <div class="motivo">
+            <label for="motivo">Motivo</label>
+            <select name="motivo" id="motivo">
+              <option value="consultaGeneral">Consulta General</option>
+            </select>
+          </div>
+          <div class="submit">
+            <div class="btn-form">
+              <input type="submit" value="Enviar Mensaje" class="btn" />
+              <button type="button" class="btn">Limpiar</button>
+            </div>
+            <p style="font-size: 10px; color: #aaa">* Campos obligatorios</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

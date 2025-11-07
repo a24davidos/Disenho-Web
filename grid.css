@@ -1,0 +1,58 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "azul azul azul verde verde"
+    "azul azul azul verde verde"
+    "azul azul azul azulMarino azulMarino"
+    "rojo rojo rosa azulMarino azulMarino"
+    "naranja naranja rosa azulMarino azulMarino"
+    "naranja naranja rosa marron marron"
+    "naranja naranja rosa marron marron";
+  padding: 10px;
+  max-width: 80%;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  gap: 5px;
+}
+
+.azul {
+  grid-area: azul;
+  background-color: aqua;
+}
+
+.verde {
+  grid-area: verde;
+  background-color: green;
+}
+
+.rosa {
+  grid-area: rosa;
+  background-color: pink;
+}
+
+.rojo {
+  grid-area: rojo;
+  background-color: red;
+}
+
+.naranja {
+  grid-area: naranja;
+  background-color: orange;
+}
+
+.marron {
+  grid-area: marron;
+  background-color: brown;
+}
+
+.azulMarino {
+  grid-area: azulMarino;
+  background-color: navy;
+}

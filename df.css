@@ -1,0 +1,128 @@
+/* === Reset general === */
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* === Contenedor principal === */
+#container {
+  display: flex;
+  gap: 30px;
+  width: 80%;
+  max-width: 1100px;
+}
+
+/* === Secciones negras === */
+section {
+  background-color: #000;
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* === Columna izquierda === */
+#_1 {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#_1 h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#_1 p {
+  margin: 6px 0;
+}
+
+/* === Columna derecha === */
+#_2 {
+  flex: 2;
+}
+
+#_2 h4 {
+  margin-bottom: 15px;
+}
+
+/* === Formulario === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Etiquetas */
+label {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Inputs y selects */
+input[type="text"],
+select,
+textarea {
+  background-color: #000;
+  color: #ccc;
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #666;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Botones */
+input[type="submit"],
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+input[type="submit"] {
+  background-color: #7a2cf5;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #9a55ff;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #666;
+}
+
+button:hover {
+  background-color: #222;
+}
+
+/* Nota inferior */
+form p {
+  font-size: 12px;
+  color: #aaa;
+  text-align: right;
+  margin-top: 5px;
+}
