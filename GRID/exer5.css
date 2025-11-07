@@ -1,0 +1,27 @@
+
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: 10px auto;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.caja {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.e{
+    grid-column: 1/3;
+}
+
+.e, .f , .g{
+    background-color: rgb(213, 213, 213);
+}

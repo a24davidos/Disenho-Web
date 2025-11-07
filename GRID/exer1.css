@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    width: vh;
+    margin: 10px auto;
+}
+
+div:nth-child{
+    border: 2px solid black;
+}
+
+aside, article{
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article{
+    border-left: 1px solid black;
+}
+
+header, footer{
+    grid-column: 1/3;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
