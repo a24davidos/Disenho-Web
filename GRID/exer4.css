@@ -1,14 +1,18 @@
-#grid-container{
-    display: grid;
-    width: 50%;
-    margin: 10px auto;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    gap: 10px;
+#grid-container {
+  display: grid;
+  width: 50%;
+  margin: 10px auto;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  gap: 10px;
 }
 
-div{
-    border: 1px solid black;
-    padding: 20px;
-    
+div {
+  border: 1px solid black;
+  padding: 20px;
 }
+
+/* Jugar con grid area para mover los elementos */
+/* #a1 {
+  grid-area: 1/3 / 4;
+} */

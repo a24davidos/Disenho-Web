@@ -1,90 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    font-family:Arial, Helvetica, sans-serif;}
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .grid-container {
-    display: grid;
-    grid-template-areas:
-        "header header header header"
-        "aside one one two"
-        "aside three four five"
-        "footer footer footer footer";
+  display: grid;
+  /* Revisar tb como funciona el repeat  */
+  grid-template-areas:
+    "header header header header"
+    "aside one one two"
+    "aside three four five"
+    "footer footer footer footer";
 
-    grid-template-columns: auto auto auto auto;
-    margin:  auto;
-    width: 80%;
-    gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  margin: auto;
+  width: 80%;
+  gap: 10px;
 }
 
-
 header {
-    grid-area: header;
-    border-bottom: 1px solid black;
-    padding: 1.5em;
-    text-align: center;
+  grid-area: header;
+  border-bottom: 1px solid black;
+  padding: 1.5em;
+  text-align: center;
 }
 
 aside {
-    grid-area: aside;
-    border-right: 1px solid black;
-    padding: 2em;
+  grid-area: aside;
+  border-right: 1px solid black;
+  padding: 2em;
 }
 
-li{
-    list-style: none;
-    margin-bottom: 1em;
+li {
+  list-style: none;
+  margin-bottom: 1em;
 }
 
 article {
-    display: flex;
-    border: 1px solid black;
-    border-radius: 1em;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 1em;
-    padding: 1em 2em 2em;;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 1em;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 2em 2em;
 }
 
 img {
-    max-height: 300px;
-    border-radius: 1em;
+  max-height: 300px;
+  border-radius: 1em;
 }
 
 #one {
-    grid-area: one;
+  grid-area: one;
 }
 
 #two {
-    grid-area: two;
+  grid-area: two;
 }
 
 #three {
-    grid-area: three;
-
+  grid-area: three;
 }
 
 #four {
-    grid-area: four;
-
+  grid-area: four;
 }
 
 #five {
-    grid-area: five;
-
+  grid-area: five;
 }
 
-
 footer {
-    grid-area: footer;
-    border-top: 1px solid black;
-    padding: 1em;
+  grid-area: footer;
+  border-top: 1px solid black;
+  padding: 1em;
 }
