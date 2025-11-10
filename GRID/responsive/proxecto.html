@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="gl">
   <head>
@@ -7,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exemplo de Deseño Responsivo</title>
 
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="proxecto.css" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icona para amosar o menú -->
     <link
@@ -38,12 +40,17 @@
           </div>
           <div>
             <p>
-              Páxina desenvolvida polo alumnado do Ciclo de DAW para o módulo DIW, inspirada nos recursos de @openwebinars.
+              Páxina desenvolvida polo alumnado do Ciclo de DAW para o módulo
+              DIW, inspirada nos recursos de @openwebinars.
             </p>
             <p>
-              Establece dous puntos de ruptura, a 576px e a 992px, nos que se produce un cambio no deseño da páxina.
+              Establece dous puntos de ruptura, a 576px e a 992px, nos que se
+              produce un cambio no deseño da páxina.
             </p>
-            <p>O proceso de desenvolvemento debe realizarse comezando polo deseño para pantallas pequenas.</p>
+            <p>
+              O proceso de desenvolvemento debe realizarse comezando polo deseño
+              para pantallas pequenas.
+            </p>
           </div>
         </section>
         <section class="images">
@@ -60,40 +67,49 @@
           <h4>Concepto 1</h4>
           <h3 class="azul">Breakpoints</h3>
           <p>
-            Debemos lembrar que o concepto de deseño responsivo, ademais de adaptación ao tamaño implica o cambio no deseño atendendo ao
-            tamaño ou outras características do dispostivo. A anchura da pantalla na que se produce o cambio é o que se coñece como Breakpoint.          </p>
+            Debemos lembrar que o concepto de deseño responsivo, ademais de
+            adaptación ao tamaño implica o cambio no deseño atendendo ao tamaño
+            ou outras características do dispostivo. A anchura da pantalla na
+            que se produce o cambio é o que se coñece como Breakpoint.
+          </p>
         </article>
         <article>
           <h4>Concepto 2</h4>
           <h3 class="azul">Media Queries</h3>
           <p>
-            Unha das ferramentas esenciais para poder realizar un deseño responsivo de calidade son as media-
-            queries que son un módulo de CSS3 que nos permite adaptar a representación do contido ás características do
-            dispositivo.         </p>
+            Unha das ferramentas esenciais para poder realizar un deseño
+            responsivo de calidade son as media- queries que son un módulo de
+            CSS3 que nos permite adaptar a representación do contido ás
+            características do dispositivo.
+          </p>
         </article>
         <article>
           <h4>Concepto 3</h4>
           <h3 class="azul">Mobile First</h3>
           <p>
-            Mobile First é un concepto de deseño web optimizado para móbiles, onde se crea inicialmente unha páxina web para
-            pantallas pequenas (smartphones e tablets).  Calquera proceso de optimización de páxinas web baseado na estratexia 
-            Mobile First está guiado polos principios do deseño web responsive e normalmente usa CSS Grids para que a páxina poida ser escalable.        </p>
+            Mobile First é un concepto de deseño web optimizado para móbiles,
+            onde se crea inicialmente unha páxina web para pantallas pequenas
+            (smartphones e tablets). Calquera proceso de optimización de páxinas
+            web baseado na estratexia Mobile First está guiado polos principios
+            do deseño web responsive e normalmente usa CSS Grids para que a
+            páxina poida ser escalable.
+          </p>
         </article>
       </section>
     </div>
     <script>
-        $(function() {
-            // Captura do evento para amosar ou ocultar
-            $(".icon").click(function() {
-            $(".menu_item").toggle();
-            });
-            $(window).resize(function() {
-            var anchura = $(this).width();
-            if (anchura > 576) {
-                $(".menu_item").show();
-            }
-            });
+      $(function () {
+        // Captura do evento para amosar ou ocultar
+        $(".icon").click(function () {
+          $(".menu_item").toggle();
         });
+        $(window).resize(function () {
+          var anchura = $(this).width();
+          if (anchura > 576) {
+            $(".menu_item").show();
+          }
+        });
+      });
     </script>
   </body>
 </html>

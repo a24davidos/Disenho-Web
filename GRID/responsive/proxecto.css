@@ -1,0 +1,104 @@
+/* Pequenos axustes iniciais */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3,
+h4,
+p {
+  margin: 0px;
+  padding: 0.5em;
+}
+
+body {
+  background-color: #eaf4fc; /* Fondo lixeiramente azul */
+}
+
+/* Cambiar a cor de letra de certos elementos */
+.azul {
+  color: #0056b3; /* Azul escuro */
+}
+
+/* Contedor xeral */
+.container {
+  font-family: "Bubler One", cursive;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.menu_item {
+  padding: 0.5em;
+  display: none;
+}
+
+/* Estilos parte principal */
+main {
+  background-color: #b3d9ff; /* Azul claro */
+}
+
+main section {
+  width: 100%;
+}
+
+section.main_text {
+  color: #003366;
+  font-weight: bolder;
+  padding: 0.5em;
+}
+
+section.images {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  padding: 0.5em;
+}
+
+section.images img {
+  height: 100px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section.images img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .hidden {
+    display: inline;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  .menu_item {
+    display: inline-block;
+  }
+
+  section.images {
+    grid-area: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+}
